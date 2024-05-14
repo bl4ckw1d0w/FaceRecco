@@ -1,9 +1,14 @@
 package main
 
-import log "github.com/sirupsen/logrus"
+import (
+	log "github.com/sirupsen/logrus"
+	"github.com/l4tr0dectus/FaceRecco/package/googlevision"
+)
 
-
-
+// main função
 func main(){
-	log.Print("Lets go")
+
+	vision.CheeseChase()
+	log.Print(vision.CheeseChase())
+
 }
