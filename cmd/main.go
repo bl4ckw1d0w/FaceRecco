@@ -1,9 +1,13 @@
 package main
 
-import log "github.com/sirupsen/logrus"
+import (
+	"github.com/vee2xx/camtron"
+)
 
+func main() {
+	// Inicia a captura da webcam e o processamento do stream
+	camtron.StartStreamToFileConsumer()
 
-
-func main(){
-	log.Print("Lets go")
+	// Inicia o aplicativo Electron que se conecta à webcam e captura o stream
+	camtron.StartCam()
 }
