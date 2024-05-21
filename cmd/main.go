@@ -1,14 +1,13 @@
 package main
 
 import (
-	log "github.com/sirupsen/logrus"
-	"github.com/l4tr0dectus/FaceRecco/package/googlevision"
+	"github.com/vee2xx/camtron"
 )
 
-// main função
-func main(){
+func main() {
+	// Inicia a captura da webcam e o processamento do stream
+	camtron.StartStreamToFileConsumer()
 
-	vision.CheeseChase()
-	log.Print(vision.CheeseChase())
-
+	// Inicia o aplicativo Electron que se conecta à webcam e captura o stream
+	camtron.StartCam()
 }
